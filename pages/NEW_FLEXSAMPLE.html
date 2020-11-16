@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CodePen=Demo Flexbox 3</title>
+        <style>
+body{padding : 2em;}
+.headerContainer{
+    display:flex;
+    flex-flow:column wrap;
+    align-content:center;
+    background:tomato;
+    font-weight:bold;
+    padding: 10px;
+}
+.mainContainer{
+display:flex;
+flex-flow: row wrap;
+font-weight:bold;
+text-align:center;
+}
+.footerContainer{
+    display:flex;
+flex-flow: column wrap;
+font-weight:bold ;
+background-color: lightgreen;
+align-content:center;
+padding:10px;
+
+}
+.mainContentItem{
+    text-align: left;
+    background: deepskyblue;
+}
+article{
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+}
+.sideBarLeftItem{
+    background: gold;
+}
+.sideBarRightItem{
+    background: hotpink;
+}
+.sideBarItem{flex:1 0 0;border:0px solid green}
+.mainContentItem{flex:3 0px;}
+.sideBarLeftItem{order:1;}
+.mainContentItem{order:2;}
+.sideBarRightItem{order:3;}
+        </style>
+    </head>
+<body>
+    <header class="headerContainer"><h1>HEADER - Sample Flexbox Eample</h1></header>
+<div class="mainContainer">
+    <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+<section class="mainContentItem">
+    <article>
+        <h2>First Article</h2>
+        <p>Tacos actually microdosing,pour over semiotics Please note that the exact name of the quiz will need to be typed</p>
+    </article>
+    <article>
+        <h2>Second Article</h2>
+        <p>In the dialog box that appears type the exact name of the Daily quiz that you want to register for Tacos actually microdosing,pour over semiotics</p>
+    </article>
+    <article>
+        <h2>Third Article</h2>
+        <p>Please, ensure that there are no leading or trailing spaces in the DQ name that you entered in the
+            box displayed in the image above. Tacos actually microdosing,pour over semiotics</p>
+    </article></section>
+<sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+</div>
+<footer class="footerContainer">Footer</footer>
+</body>
+</html>
